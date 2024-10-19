@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-xl md:text-2xl font-bold text-gray-800 hidden md:block">Shake House</h1>
+            <!-- Navigation -->
+            <nav class="w-full md:w-auto">
+                <ul class="flex justify-between space-x-4 md:space-x-6">
+                    <li><a href="#home" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                    <li><a href="#menu" class="text-gray-600 hover:text-gray-800">Menu</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-gray-800">About</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home-->
+    <section id="home" class="bg-cover bg-center h-screen"
+        style="background-image: url('https://i.pinimg.com/originals/32/13/08/3213085f254f211f3204a672540d00f6.jpg');">
+        <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Delicious Shakes, Just For You</h2>
+                <p class="text-lg md:text-xl mb-6">Indulge in a variety of fresh and creamy milkshakes</p>
+                <a href="#menu"
+                    class="px-4 py-2 md:px-6 md:py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-600">Explore
+                    Our Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!--  Specials  -->
+    <section id="specials" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Our Specials</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="relative overflow-hidden rounded-md group">
+                    <img src="https://th.bing.com/th/id/OIP.gJ1Dcwwztm4ch2qnvTAsJgHaLG?w=1366&h=2048&rs=1&pid=ImgDetMain"
+                        alt="Special Shake 1"
+                        class="w-full h-48 object-cover rounded-md transform transition-transform duration-500 ease-in-out group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 rounded-md">
+                        <h3 class="text-xl font-bold mb-2">Chocolate Delight</h3>
+                        <p class="text-gray-200 mb-4">A rich and creamy chocolate shake topped with whipped cream and
+                            chocolate shavings.</p>
+                        <p class="text-lg font-semibold text-yellow-500">Rs: 220</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-md group">
+                    <img src="https://www.unicornsinthekitchen.com/wp-content/uploads/2018/08/Strawberry-Milkshake-square.jpg"
+                        alt="Special Shake 2"
+                        class="w-full h-48 object-cover rounded-md transform transition-transform duration-500 ease-in-out group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 rounded-md">
+                        <h3 class="text-xl font-bold mb-2">Strawberry Heaven</h3>
+                        <p class="text-gray-200 mb-4">Fresh strawberries blended to perfection with vanilla ice cream
+                            and topped with whipped cream.</p>
+                        <p class="text-lg font-semibold text-yellow-500">Rs: 200</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-md group">
+                    <img src="https://th.bing.com/th/id/OIP.ND8QLw50I3b1R_qyjqFbmgHaK2?w=600&h=879&rs=1&pid=ImgDetMain"
+                        alt="Special Shake 3"
+                        class="w-full h-48 object-cover rounded-md transform transition-transform duration-500 ease-in-out group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 rounded-md">
+                        <h3 class="text-xl font-bold mb-2">Caramel Crunch</h3>
+                        <p class="text-gray-200 mb-4">A smooth caramel shake with a crunchy topping of caramelized nuts.
+                        </p>
+                        <p class="text-lg font-semibold text-yellow-500">Rs: 189</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us-->
+    <section id="about" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-4xl font-semibold mb-4">Welcome to Shake House</h3>
+                    <p class="text-gray-600 mb-6 text-xl">
+                        At Shake House, we are passionate about bringing you the finest, freshest, and most delightful
+                        milkshakes. Our shakes are crafted with high-quality ingredients, designed to satisfy your
+                        cravings and create a memorable experience. Whether you love chocolate, fruit, or caramel, we
+                        have something for every taste.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-xl">
+                        Our mission is simple: to provide our customers with a delicious shake that lifts their spirits.
+                        We're proud to offer a wide variety of flavors and special toppings that make every shake
+                        unique.
+                    </p>
+                </div>
+
+
+                <div class="flex justify-center">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/debd3971880527.5bd4474752f67.jpg"
+                        alt="About Us Image" class="rounded-lg shadow-lg w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Menu-->
+    <section id="menu" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Our Menu</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                Discover our delicious variety of shakes, crafted with the finest ingredients. Whether you crave rich
+                chocolate, fresh fruits, or sweet caramel, we have something to delight every palate. Check out some of
+                our favorites below!
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+                <div class="space-y-6">
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://th.bing.com/th/id/OIP.l8HmVQaic5SrmexH4TinkwAAAA?rs=1&pid=ImgDetMain"
+                            alt="Classic Vanilla Shake" class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Classic Vanilla Shake</h3>
+                            <p class="text-gray-600 mb-4">Our signature vanilla shake, made with the finest vanilla
+                                beans and topped with whipped cream.</p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 180</p>
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://thumbs.dreamstime.com/b/chocolate-milkshake-cream-oreo-biscuits-syrup-wooden-table-182872332.jpg"
+                            alt="Oreo Cookie Shake" class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Oreo Cookie Shake</h3>
+                            <p class="text-gray-600 mb-4">A blend of creamy vanilla ice cream and crunchy Oreo cookies,
+                                topped with chocolate drizzle.</p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 210</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://www.cookwithkushi.com/wp-content/uploads/2021/04/IMG_3500_.jpg"
+                            alt="Mango Madness" class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Mango Madness</h3>
+                            <p class="text-gray-600 mb-4">A tropical mango shake made with fresh mangoes and a hint of
+                                vanilla for a refreshing treat.</p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 200</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://bing.com/th?id=OSK.defcf2c2489b4db3c168f6c7b54bc8ff" alt="Chocolate Delight"
+                            class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Chocolate Delight</h3>
+                            <p class="text-gray-600 mb-4">A rich and creamy chocolate shake topped with whipped cream
+                                and chocolate shavings.</p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 220</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/07/Banan-Milkshake-4.1200px-1-of-1-600x900.jpg"
+                            alt="Banana Blast" class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Banana Blast</h3>
+                            <p class="text-gray-600 mb-4">A smooth banana shake with hints of caramel and whipped cream.
+                            </p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 180</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://bing.com/th?id=OSK.e04775005e89bf076e606fa123b8fd93" alt="Caramel Crunch"
+                            class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Caramel Crunch</h3>
+                            <p class="text-gray-600 mb-4">A smooth caramel shake with a crunchy topping of caramelized
+                                nuts.</p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 189</p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi182Ljz3oKt4oj6WF0Pt0QdvAp5qP4SWSyjnodLkdbl-vk6v3wiZVyZ33kdh5ggrJY4bbDJrKKdhpUJx94R3pTR8KI6q8UjLOfoQ1ObYPX8aup-7T0842VHvYA8a3LbfMms7XK-vxpoPx8lXTd8v4tl7v0HNNwnChqvrqxuYd7lZKat8wmbvGEJNNlXiKM/w640-h640/Berry%20Blast%20Smoothie.jpg"
+                            alt="Berry Blast" class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Berry Blast</h3>
+                            <p class="text-gray-600 mb-4">A mix of blueberries and strawberries blended to perfection.
+                            </p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 200</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg flex items-center transform transition duration-300 hover:scale-105">
+                        <img src="https://i0.wp.com/countrygirlcookin.com/wp-content/uploads/2021/03/IMG_8853-copy-2.jpg?resize=768%2C1024&ssl=1"
+                            alt="Minty Fresh" class="w-48 h-48 object-cover rounded-md mr-6">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Minty Fresh</h3>
+                            <p class="text-gray-600 mb-4">A refreshing mint shake with chocolate chips and whipped
+                                cream.</p>
+                            <p class="text-lg font-semibold text-yellow-500">Rs: 220</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Review -->
+    <section id="customer-ratings" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Customer Ratings</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+
+                        <h3 class="text-xl font-semibold text-gray-800">John Doe</h3>
+
+                        <div class="ml-auto flex">
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-gray-300">&#9733;</span>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-600">"The best milkshake I've ever had! The Chocolate Delight was smooth and
+                        delicious. Will definitely come back for more!"</p>
+                </div>
+
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Emily Smith</h3>
+                        <div class="ml-auto flex">
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I had the Strawberry Heaven, and it was absolutely amazing. Fresh
+                        strawberries blended to perfection!"</p>
+                </div>
+
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Michael Brown</h3>
+                        <div class="ml-auto flex">
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-gray-300">&#9733;</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Oreo Cookie Shake was perfect for my sweet tooth. Would love to try
+                        the rest of the menu!"</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Sophia Lee</h3>
+                        <div class="ml-auto flex">
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-gray-300">&#9733;</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Loved the Caramel Crunch! The combination of caramel and crunchy nuts was
+                        fantastic!"</p>
+                </div>
+
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Chris Johnson</h3>
+                        <div class="ml-auto flex">
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-gray-300">&#9733;</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Banana Blast was fresh and flavorful. A perfect summer treat!"</p>
+                </div>
+
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Lisa Miller</h3>
+                        <div class="ml-auto flex">
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-yellow-500">&#9733;</span>
+                            <span class="text-gray-300">&#9733;</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Minty Fresh shake was refreshing and minty, just as the name suggests.
+                        Highly recommend it!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-12 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Contact Us</h2>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Our Address</h3>
+                    <p class="text-gray-600">123 Shake Street, Milkshake City, FL 12345</p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold">Phone Number</h3>
+                    <p class="text-gray-600">+1 (123) 456-7890</p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold">Email</h3>
+                    <p class="text-gray-600">info@shakehouse.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Footer-->
+            <p class="text-gray-300 text-sm ml-20">&copy; Copyright. All rights reserved @ Shake House</p>
+
+
+            <div class="flex space-x-12 mr-20">
+                <a href="#" class="text-white text-2xl "><i class="fa-brands fa-facebook"
+                        style="color: #f5f5f5;"></i></a>
+                <a href="#" class="text-white text-2xl "><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-white text-2xl "><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
